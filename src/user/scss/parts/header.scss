@@ -1,22 +1,76 @@
 .header{
     position: absolute;
+    top: 0;
+    left: 0;
+
     width: 100%;
     & .container{
         display: flex;
         justify-content: flex-end;
         padding-top: 10px;
-        padding-right: 4px;
-    }
-    &-buttons-list{
-        display: flex;
-    }
-    & button{
-        padding: 10px;
+        padding-right: 21px;
 
         background-color: transparent;
-        border: none;
+        @media screen and (min-width:1280px){
+            padding-top: 19px;
+        }
     }
-    &__icon{
+
+    &__navigation{
+        display: none;
+        @media screen and (min-width:1280px){
+            display: flex;
+            gap: 36px;
+        }
+        & a{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 29px;
+
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+    &-buttons-list{
+        margin-left: 25px;
+        display: flex;
+        &__item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+    & button{
+        display: flex;    
+        padding-left: 10px;
+        padding-right: 10px;
+    
+        background-color: transparent;
+        border: none;
+        @media screen and (min-width:1280px){
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+    &__icon-phone{
+        width: 7px;
+        height: 7px;
         fill: white;
+        display: block; 
+        @media screen and (min-width:1280px){
+            display: none; 
+        }
+    }
+    &__icon-pc{
+        width: 20px;
+        height: 20px;
+        fill: white;
+        display: none;
+        @media screen and (min-width:1280px){
+            display: block; 
+        }
     }
 }

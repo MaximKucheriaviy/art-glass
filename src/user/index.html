@@ -5,29 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <ul class="header-buttons-list">
-                <li class="header-buttons-list__item">
-                    <button type="button">
-                        <svg class="header__icon" width="7" height="7">
-                            <use href="./images/svgSprite.svg#icon-search"></use>
-                        </svg>
-                    </button>
-                </li>
-                <li class="header-buttons-list__item">
-                    <button type="button">
-                        <svg class="header__icon" width="7" height="7">
-                            <use href="./images/svgSprite.svg#icon-cart"></use>
-                        </svg>
-                    </button>
-                </li>
-            </ul>
+                <ul class="header__navigation">
+                    <li>
+                        <a href="">Про нас</a>
+                    </li>
+                    <li>
+                        <a href="">Каталог</a>
+                    </li>
+                    <li>
+                        <a href="">Контакти</a>
+                    </li>
+                </ul>
+                <ul class="header-buttons-list">
+                    <li class="header-buttons-list__item">
+                        <button type="button">
+                            <svg class="header__icon-phone" width="7">
+                                <use href="./images/svgSprite.svg#icon-search"></use>
+                            </svg>
+                            <svg class="header__icon-pc" width="20" >
+                                <use href="./images/svgSprite.svg#icon-search"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="header-buttons-list__item">
+                        <button type="button">
+                            <svg class="header__icon-phone" width="7">
+                                <use href="./images/svgSprite.svg#icon-cart"></use>
+                            </svg>
+                            <svg class="header__icon-pc" width="20">
+                                <use href="./images/svgSprite.svg#icon-cart"></use>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
         </div>
     </header>
     <main>
@@ -36,6 +53,11 @@
                 <h1 class="herro__title">Art-glass</h1>
             </div>
         </section>
+        <div class="white-div">
+            <div class="container">
+
+            </div>
+        </div>
         <section class="about">
             <div class="container">
                 <h2 class="visually-hidden">Про нас</h2>
@@ -47,34 +69,54 @@
             </div>
         </section>
         <section class="image-galery">
-            <h2 class="visually-hidden">Фотографії</h2>
-            <div class="thumb">
-                <img class = "image-galery__galary-image1" src="./images/main-gl1-phone.png" alt="Фото дзеркала">
+            <div class="container">
+                <h2 class="visually-hidden">Фотографії</h2>
+                <div class="thumb">
+                    <picture class = "image-galery__galary-image1">
+                        <source srcset="./images/main-gl1-PC.png" media="(min-width: 600px)">
+                        <img src="./images/main-gl1-phone.png" alt="Фото дзеркала">
+                    </picture>
+                </div>
+                <ul class="image-galery__list">
+                    <li class="image-galery__item">
+                        <picture>
+                            <source srcset="./images/main-gl2-PC.png" media="(min-width: 600px)">
+                            <img src="./images/main-gl2-phone.png" alt="Фото дзеркала">
+                        </picture>
+                    </li>
+                    <li>
+                        <picture>
+                            <source srcset="./images/main-gl3-PC.png" media="(min-width: 600px)">
+                            <img src="./images/main-gl3-phone..png" alt="Фото дзеркала">
+                        </picture>
+                    </li>
+                </ul>
             </div>
-            <ul class="image-galery__list">
-                <li class="image-galery__item">
-                    <picture>
-                        <img src="./images/main-gl2-phone.png" alt="Фото дзеркала">
-                    </picture>
-                </li>
-                <li>
-                    <picture>
-                        <img src="./images/main-gl3-phone..png" alt="Фото дзеркала">
-                    </picture>
-                </li>
-            </ul>
         </section>
     </main>
-    <footer>
+    <div class="white-div">
+        <div class="container">
+            
+        </div>
+    </div>
+    <footer class="footer">
         <div class="container">
             <a href="./index.html" class="logo">Art-glass</a>
-            <p>м.Біла Церква вул. Київська 150а </p>
-            <ul>
-                <li>
-                    <a href="" class="facebook"></a>
+            <p class="footer__text">м.Біла Церква вул. Київська 150а </p>
+            <ul class="footer-sotial-links">
+                <li class="footer-sotial-links__item">
+                    <a href="" class="facebook">
+                        <svg  class="footer__icon">
+                            <use href="./images/svgSprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
                 </li>
-                <li>
-                    <a href="" class="instagram"></a>
+                <li class="footer-sotial-links__item">
+                    <a href="" class="instagram">
+                        <svg class="footer__icon">
+                            <use href="./images/svgSprite.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
                 </li>
             </ul>
         </div>

@@ -25,14 +25,15 @@ button {
 }
 
 body {
-  background-color: black;
+  
+  background-image: url(../images/body-background.png);
   margin: 0px;
+  padding: 0px;
 
   font-family: "Roboto", sans-serif;
   color: var(--font-black1);
   letter-spacing: 0.03em;
   font-size: 14px;
-  
 }
 
 .visually-hidden {
@@ -49,7 +50,18 @@ body {
 }
 
 .container{
-  min-width: 320px;
+  background-color: black;
+  width: 320px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+}
+
+.white-div{
+  & .container{
+    background-color: white;
+    height: 20px;
+  }
 }
