@@ -1,13 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <div>New HTML template</div>
-    <img src="./images/scoresImage.png" alt="Scores">
+    <header class="header">
+        <div class="container">
+            <ul class="header-buttons-list">
+                <li class="header-buttons-list__item">
+                    <button type="button">
+                        <svg class="header__icon" width="7" height="7">
+                            <use href="./images/svgSprite.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="header-buttons-list__item">
+                    <button type="button">
+                        <svg class="header__icon" width="7" height="7">
+                            <use href="./images/svgSprite.svg#icon-cart"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="herro">
+            <div class="container">
+                <h1 class="herro__title">Art-glass</h1>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <h2>Про нас</h2>
+                <ul class="about__list">
+                    <li class="about__item">Високоякісні матеріали</li>
+                    <li class="about__item">Широкий вибір асортименту</li>
+                    <li class="about__item">Вигідна ціна</li>
+                </ul>
+            </div>
+        </section>
+        <section class="photos-galery">
+            <h2>Фотографії</h2>
+            <img src="./images/main-gl1-phone.png" alt="Фото дзеркала">
+            <ul>
+                <li>
+                    <picture>
+                        <img src="./images/main-gl2-phone.png" alt="Фото дзеркала">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <img src="./images/main-gl3-phone..png" alt="Фото дзеркала">
+                    </picture>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <a href="./index.html" class="logo">Art-glass</a>
+            <p>м.Біла Церква вул. Київська 150а </p>
+            <ul>
+                <li>
+                    <a href="" class="facebook"></a>
+                </li>
+                <li>
+                    <a href="" class="instagram"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  margin: 0px;
+
+  font-family: "Roboto", sans-serif;
+  color: var(--font-black1);
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  background-color: var(--font-white);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container{
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}

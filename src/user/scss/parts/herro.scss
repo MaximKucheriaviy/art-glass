@@ -1,0 +1,19 @@
+.herro{
+    & .container{
+        background-image: url("../images/herroBackground-Phone.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 167px;
+        padding-bottom: 12px;
+        padding-left: 22px;
+    }
+    &__title{
+        font-family: 'Dancing Script', cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+
+        color: #E5E5E5;
+    }
+}
