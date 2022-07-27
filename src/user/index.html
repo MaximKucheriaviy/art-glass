@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header class="header">
@@ -38,7 +38,7 @@
         </section>
         <section class="about">
             <div class="container">
-                <h2>Про нас</h2>
+                <h2 class="visually-hidden">Про нас</h2>
                 <ul class="about__list">
                     <li class="about__item">Високоякісні матеріали</li>
                     <li class="about__item">Широкий вибір асортименту</li>
@@ -46,11 +46,13 @@
                 </ul>
             </div>
         </section>
-        <section class="photos-galery">
-            <h2>Фотографії</h2>
-            <img src="./images/main-gl1-phone.png" alt="Фото дзеркала">
-            <ul>
-                <li>
+        <section class="image-galery">
+            <h2 class="visually-hidden">Фотографії</h2>
+            <div class="thumb">
+                <img class = "image-galery__galary-image1" src="./images/main-gl1-phone.png" alt="Фото дзеркала">
+            </div>
+            <ul class="image-galery__list">
+                <li class="image-galery__item">
                     <picture>
                         <img src="./images/main-gl2-phone.png" alt="Фото дзеркала">
                     </picture>
