@@ -4,33 +4,50 @@
         display: flex;
         justify-content: space-between;
         align-items: baseline;
+        padding-top: 13px;
+        padding-bottom: 12px;
+        padding-left: 11px;
+        padding-right: 40px;
 
-        padding-top: 63px;
-        padding-bottom: 63px;
-        padding-left: 66px;
-        padding-right: 47px;
+        @media screen and (min-width: 1280px) {
+            padding-top: 63px;
+            padding-bottom: 63px;
+            padding-left: 66px;
+            padding-right: 47px;
+        }
     }
     & .logo{
         font-family: 'Dancing Script';
         font-style: normal;
         font-weight: 400;
-        font-size: 60px;
-        line-height: 72px;
-
-        color: #E5E5E5;
+        font-size: 15px;
+        line-height: 18px;
         text-decoration: none;
+        color: #E5E5E5;
+        
+        @media screen and (min-width: 1280px) {
+            font-size: 60px;
+            line-height: 72px;
+        }
+
+
     }
     &__text{  
         font-family: 'Roboto';
         font-style: normal;
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 46px;
+        font-weight: 275;
+        font-size: 8px;
+        line-height: 12px;
         color: #FFFFFF;
+        @media screen and (min-width: 1280px) {
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 46px;
+        }
     }
     &__icon{
-        width: 20px;
-        height: 20px;
+        width: 5px;
+        height: 5px;
         fill: white;
         @media screen and (min-width: 1280px){
             width: 50px;
@@ -39,6 +56,9 @@
     }
     &-sotial-links{
         display: flex;
-        gap: 67px;
+        gap: 14px;
+        @media screen and (min-width: 1280px){
+            gap: 67px;
+        }
     }
 }
