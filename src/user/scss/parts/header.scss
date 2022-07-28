@@ -23,10 +23,12 @@
             gap: 36px;
         }
         & a{
+            display: block;
+            position: relative;
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 400;
-            font-size: 25px;
+            font-size: 18px;
             line-height: 29px;
 
             color: #FFFFFF;
